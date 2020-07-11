@@ -34,11 +34,11 @@ Format: ![commands](https://github.com/vurise/Git_Basics/blob/master/git-3.1.PNG
 
 ## Step-8.2(May Skip) Resolving error on step-8
 ### Error
-![commands](https://github.com/vurise/Git_Basics/blob/master/git-error-2.PNG)
+![commands](https://github.com/vurise/Git_Basics/blob/master/git-error2.PNG)
 ### Error Resolved - Not the best way
 ![commands](https://github.com/vurise/Git_Basics/blob/master/git-error2_resolved.PNG)
 ### Error Resolved - Best Way
-![commands](https://github.com/vurise/Git_Basics/blob/master/git-error2_resolved_better.PNG)
+![commands](https://github.com/vurise/Git_Basics/blob/master/git-error-2_resolved_better.PNG)
 
 
 
