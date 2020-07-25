@@ -1,0 +1,315 @@
+<link href="https://fonts.googleapis.com/css?family=Literata|Lobster+Two|Permanent+Marker|Satisfy&display=swap" rel="stylesheet">
+<html>
+<head>
+<title> Login page </title>
+<link rel="stylesheet" type="text/css" href="style.css"><link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <link rel = "stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel ="stylesheet" href= "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="time.js"></script>
+    <script type="stylesheet" src="index.css"></script>
+    <style type="text/css">
+      body
+      {
+        margin: 0;
+        padding: 0;
+        background-color: #333;
+      }
+  .nav ul
+{
+
+    list-style-type: : none;
+    background-color: #664466;
+    padding:0;
+    margin:0;
+}
+li
+{
+
+  display: inline;
+
+  padding: 40px;
+
+  color: white;
+}
+ .nav a
+ {
+
+
+
+    color: white;
+
+
+
+    text-decoration: none;
+
+
+
+    width: 100px;
+
+
+
+    display: block;
+
+
+
+    padding: 29px;
+
+
+
+    background-color: black;
+
+
+
+    font-size: 17px;
+
+
+
+    font-family: helvetica;
+
+
+
+}
+
+
+
+.nav a:hover
+
+
+
+{
+
+
+
+    background-color: #ddd;
+
+    color: black;
+
+
+
+    transition: 0.4s;
+
+
+
+}
+
+
+
+.nav a.active {
+
+
+
+  background-color: white;
+
+  color: white;
+
+  
+
+}
+
+
+
+* {
+
+  box-sizing: border-box;
+
+}
+
+
+
+/* Style the search field */
+
+form.example input[type=text] {
+
+  padding: 10px;
+
+  font-size: 17px;
+
+  border: 1px solid grey;
+
+  float: left;
+
+  width: 80%;
+
+  background: #f1f1f1;
+
+}
+
+/* Style the submit button */
+
+form.example button {
+
+  float: left;
+
+  width: 20%;
+
+  height: 6%;
+
+  padding: 10px;
+
+  background: #2196F3;
+
+  color: white;
+
+  font-size: 17px;
+
+  border: 1px solid grey;
+
+  border-left: none; /* Prevent double borders */
+
+  cursor: pointer;
+
+}
+
+form.example button:hover {
+
+  background: #0b7dda;
+
+}
+
+
+
+/* Clear floats */
+
+form.example::after {
+
+  content: "";
+
+  clear: both;
+
+  display: table;
+
+}
+
+
+div.hack{
+  width: 25%;
+  margin-left: 15px 0px 15px 10px;
+  border-color: white;
+}
+
+   </style>
+
+
+
+
+   <!-------------------------javasript---------------------------->
+<script type="text/javascript">
+   function renderTime() {
+  // body...
+  //Date
+
+  var mydate = new Date;
+  var year = mydate.getYear();
+  if(year<1000)
+  {
+    year+=1900;
+  }
+  var day = mydate.getDay();
+  var month = mydate.getMonth();
+  var daym = mydate.getDate();
+  var dayArray = new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+  var monthArray = new Array("January","February","March","April","May","June","July","August","September","August","October","November","December");
+
+
+  //Time
+  var currentTime = new Date();
+  var h = currentTime.getHours();
+  var min = currentTime.getMinutes();
+  var s = currentTime.getSeconds();
+
+  if(h==24)
+  {
+    h = 0;
+  }
+  else if(h>12)
+  {
+    h = h-0;
+  }
+
+  if(h<10)
+  {
+    h = '0' + h;
+  }
+  if(min<10)
+  {
+    min = '0' + min;
+  }
+  if(s<10)
+  {
+    s = '0' + s;
+  }
+
+  var myClock = document.getElementById("clockDisplay") ;
+  myClock.textContent = " " + dayArray[day] + " " + daym + " " + monthArray[month] + " " + year + " " + h + ":" + min + ":" +s;
+  document.getElementById('clockDisplay').style.color="white";
+
+  setTimeout("renderTime()",1000);
+ }renderTime();
+</script>
+   <!--------------javascript paste-------------------------------->
+</head>
+<!--Body-->    
+<body onload="renderTime();">
+      <div id = "clockDisplay" clas = "clock" style="margin-bottom: 20px; margin-top: 5px;"></div>
+
+
+
+
+
+    <div class="top-nav-bar">
+
+
+
+    <div class="menu-bar">
+      <ul>
+      <li><a href="index" style="color: brown">Home</a></li>
+
+      <li><a href="hackathons" style="color: brown">Hackathons</a></li>
+
+
+
+      <li><a href="codingcompetitions"  style="display:inline ; color: brown">Coding Competitions</a></li>
+
+
+
+      <li><a href="fests" style="color: brown">Fests</a></li>
+
+
+
+      <li><a href="muns" style="color: brown">MUN's</a></li>
+
+        <li><a href ="notifications" style="color: brown">Notification</a></li>
+
+
+
+        <li><a href ="profile" style="color: brown">Profile</a></li>
+
+
+
+ <li><a href="about" style="color: brown">About</a></li>
+
+    </ul>
+      
+    </div>
+    </div>  
+    </div> 
+    
+<div class="loginbox">
+<img src="avatar.png" class="avatar">
+<p>
+ <h3><center> Welcome Back</center></h3></p>
+ <form>
+ <p>Username </p>
+ <input type="text" name="" placeholder="Enter your username">
+ <p> Password </p>
+ <input type="password" name="" placeholder="Enter your password">
+ <p><center><input type="submit" value="Login"></center></p>
+ <a href="forgotpw.html">Lost your Password?</a><br>
+ <a href="registration.html">Don't have an account?</a>
+
+</div>
+</div>
+
+</body>
+</html>
